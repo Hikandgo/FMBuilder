@@ -43,11 +43,11 @@
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor>
       </Button>
-      <TextField fx:id="DATE_MSG" layoutX="215.0" layoutY="204.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
-      <TextField fx:id="DATE_REQ" layoutX="215.0" layoutY="240.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
-      <TextField fx:id="DATE_GET_REQ" layoutX="215.0" layoutY="273.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
-      <TextField fx:id="DATE_ORDER" layoutX="215.0" layoutY="308.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
-      <TextField fx:id="DATE_PROLONG" layoutX="215.0" layoutY="347.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_MSG" layoutX="155.0" layoutY="204.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_REQ" layoutX="155.0" layoutY="240.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_GET_REQ" layoutX="155.0" layoutY="273.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_ORDER" layoutX="155.0" layoutY="308.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_PROLONG" layoutX="155.0" layoutY="347.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
       <Label graphicTextGap="5.0" layoutX="42.0" layoutY="204.0" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: black;" text="&lt;ДатаСооб&gt;" textOverrun="WORD_ELLIPSIS" wrapText="true" />
       <Label graphicTextGap="5.0" layoutX="42.0" layoutY="240.0" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: black;" text="&lt;ДатЗапр&gt;" textOverrun="WORD_ELLIPSIS" wrapText="true" />
       <Label graphicTextGap="5.0" layoutX="42.0" layoutY="273.0" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: black;" text="&lt;ДатПолучЗапр&gt;" textOverrun="WORD_ELLIPSIS" wrapText="true" />
@@ -56,5 +56,15 @@
       <ProgressBar fx:id="progressBar" layoutX="130.0" layoutY="401.0" prefHeight="36.0" prefWidth="281.0" progress="0.0" />
       <Label alignment="BASELINE_CENTER" layoutX="27.0" layoutY="159.0" prefHeight="36.0" prefWidth="135.0" style="-fx-border-color: black;" text="Редактируемые теги" textOverrun="CLIP" />
       <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="159.0" prefHeight="36.0" prefWidth="120.0" style="-fx-border-color: black;" text="+- от тек. даты" textOverrun="CLIP" />
+      <Button fx:id="inkDMSG" layoutX="216.0" layoutY="204.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="+" />
+      <Button fx:id="dekDMSG" layoutX="250.0" layoutY="204.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="-" />
+      <Button fx:id="inkREQ" layoutX="216.0" layoutY="240.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="+" />
+      <Button fx:id="dekREQ" layoutX="250.0" layoutY="240.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="-" />
+      <Button fx:id="inkGET_REQ" layoutX="216.0" layoutY="273.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="+" />
+      <Button fx:id="dekGET_REQ" layoutX="250.0" layoutY="273.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="-" />
+      <Button fx:id="inkORDER" layoutX="216.0" layoutY="308.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="+" />
+      <Button fx:id="dekORDER" layoutX="250.0" layoutY="308.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="-" />
+      <Button fx:id="dekPROL" layoutX="250.0" layoutY="347.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="-" />
+      <Button fx:id="inkPROL" layoutX="216.0" layoutY="347.0" mnemonicParsing="false" onAction="#onClickDec" prefHeight="25.0" prefWidth="29.0" text="+" />
    </children>
 </AnchorPane>
