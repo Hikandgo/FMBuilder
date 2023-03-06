@@ -35,7 +35,7 @@
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor>
       </Button>
-      <Button layoutX="426.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleInputPath" prefHeight="36.0" prefWidth="48.0" text="&lt;">
+      <Button layoutX="426.0" layoutY="401.0" mnemonicParsing="false" onAction="#returnToRoot" prefHeight="36.0" prefWidth="48.0" text="&lt;">
          <font>
             <Font size="13.0" />
          </font>

@@ -156,6 +156,12 @@ public class Builder407Controller {
             DATE_PROLONG.setText(String.valueOf(count));
         }
     }
+
+    @FXML
+    public void returnToRoot() {
+        mainApp.rootInit();
+    }
+
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
     }
