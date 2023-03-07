@@ -10,6 +10,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import my.hikandgo.xmlbuilderapp.view.Builder407Controller;
 import my.hikandgo.xmlbuilderapp.view.RootLayoutController;
+import my.hikandgo.xmlbuilderapp.view.ValidatorController;
 
 import java.io.IOException;
 
@@ -43,6 +44,23 @@ public class MainApp extends Application {
             primaryStage.show();
 
             Builder407Controller controller = loader.getController();
+            controller.setMainApp(this);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showValidator() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainApp.class.getResource("view/Validator.fxml"));
+            AnchorPane validator = loader.load();
+            Scene scene = new Scene(validator);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+
+            ValidatorController controller = loader.getController();
             controller.setMainApp(this);
 
         } catch (IOException e) {

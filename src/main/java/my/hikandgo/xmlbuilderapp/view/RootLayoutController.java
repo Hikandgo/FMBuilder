@@ -3,7 +3,6 @@ package my.hikandgo.xmlbuilderapp.view;
 import javafx.fxml.FXML;
 import my.hikandgo.xmlbuilderapp.MainApp;
 
-import java.io.IOException;
 
 public class RootLayoutController {
 
@@ -21,6 +20,11 @@ public class RootLayoutController {
     @FXML
     public void switchToBuilder() {
         mainApp.showBuilder();
+    }
+
+    @FXML
+    public void switchToValidator() {
+        mainApp.showValidator();
     }
 
     public void setMainApp(MainApp mainApp) {
